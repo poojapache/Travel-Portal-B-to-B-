@@ -1,0 +1,244 @@
+body
+{
+	height:90vh;
+	width:98.5vw;
+	color:white;
+}
+h2
+{
+		font-size:2vw;
+		margin-top:1vh;
+		margin-bottom:0;
+		
+}
+ul
+{
+	position:relative;
+	list-style-type:none;
+    padding:0;
+	margin-bottom:5px;
+	overflow:hidden;
+	font-size:2vw;
+	background-color:#333;
+	color:white;
+	width:100%;
+}
+li{
+	float:left;
+	color:white;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+	
+}
+
+li a.active {
+    background-color: #00CED1;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.parent
+{
+	position:absolute;
+	width:94vw;
+	height:80vh;
+	max-width: 100%;
+    max-height: 100%;
+  	object-fit:cover;
+	margin-left:0.5vw;
+	margin-right:0.5vw;
+}
+
+
+img
+{
+    width:97.5vw;
+    height: 90vh;
+	border: 0vw solid transparent;
+    -webkit-border-image: url(trav1.jpg) round;
+    -o-border-image: url(trav1.jpg) round;
+    border-image: url(trav1.jpg) round;
+    border-image-slice: 5%;
+	object-fit: fill;
+}
+
+
+.card
+{ 
+	position:relative;
+	width:98vw;
+	height:90vh;
+	background-color:white;
+	margin-left:2vw;
+	margin-right:2vw;
+	
+}
+.formcontainer
+{
+    padding:1vh 1vw 1vh 1vw;
+	position:relative;
+	float:right;
+	background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); 
+	z-index:999;
+	top:6vh;
+	right:5vw;
+	border-radius:25px;
+	border: 1px solid black;
+	opacity:100%;
+	filter: alpha(opacity=50);
+	height:auto;
+	
+}
+#signup
+{
+	font-family:"Monotype Corsiva", Times, Serif;
+	font-size:3vw;
+}
+.clearfix::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+.signupbtn1{
+	 padding: 2vh 5vw;
+	 font-family: "Times New Roman", Times, Serif;
+	font-size:1.5vw;
+    background-color: #00CED1;
+	color: white;
+	float: left;
+	cursor: pointer;
+    width: 100%;
+	border: none;
+	border-radius:25vw;
+}
+#lab
+{
+	padding:1vh 1vw 1vh 1vw;
+	font-family: "Times New Roman", Times, Serif;
+	font-size:1.5vw;
+	color:white;
+}
+.innerdiv
+{
+	
+	position:relative;
+	height:0.3vh;
+	font-family: "Times New Roman", Times, Serif;
+	font-size:1.5vw;
+	color:white;
+}
+.txtfld
+{
+	padding:0.5vh 0.5vw 0.5vh 0.5vw;
+	font-family: "Times New Roman", Times, Serif;
+	font-size:1vw;
+}
+.star{
+    color: red;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.modal
+{
+	display:none;
+	z-index:1000;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	 background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 25vh 40vw; /* 15% from the top and centered */
+    padding: 0;
+    position:absolute;
+	width:auto;
+	height:auto;
+	background-color:white;
+	border-radius:1vw;
+	
+	
+}
+.close {
+	
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	margin-right:1vw;
+	
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head
+{
+	font-family: "Monotype Corsiva", Times, Serif;
+	font-size:7vh;
+	text-align:center;
+	background-color:#00CED1;
+	z-index:1000;
+	width:auto;
+	height:10vh;
+	padding-top:1.5vh;
+	border-top-left-radius:1vw;
+	border-top-right-radius:1vw;
+}
+#loginbtn
+{
+	 padding: 2vh 5vw;
+	 font-family: "Times New Roman", Times, Serif;
+	font-size:1.5vw;
+    background-color: #00CED1;
+	color: white;
+	float: left;
+	cursor: pointer;
+    width: 100%;
+	border: none;
+	border-radius:25vw;
+}
+.profcard
+{
+	height:90%;
+	width:90%;
+	box-shadow: 10px 10px 5px 5px grey;
+	margin-right:2%;
+	margin-top:2%;
+	margin-bottom:2%;
+}
